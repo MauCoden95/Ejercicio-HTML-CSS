@@ -1,0 +1,131 @@
+/*
+Ejercicio completo con HTML y CSS.
+
+1- Crear un documento HTML y vincularlo con CSS.
+2- Crear una estructura HTML que cuente con un CONTENEDOR GENERAL, CABECERA, MENU, BARRA LATERAL, 
+   SECCION DE CONTENIDO PRINCIPAL, ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL, y FOOTER.     
+3- Todo el contenido debe estar dentro del contenedor general y su ancho seria de 1200px y estar centrado.
+4- El Header debe ocupar el 100% del ancho y tener un texto grande centrado.
+5- El menu debe tener los elementos uno al lado del otro.
+6- El contenido principal debe tener un ancho de 70%.
+7- El contenido del contenedor principal debe ser una cuadricula con 4 lineas de 2 cajas.
+8- La barra lateral debe tener un ancho del 30%.
+9-El footer debe tener un ancho del 100% del div que lo contiene y estar debajo del todo
+
+
+*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+#contenedor{
+    width: 1200px;
+    margin: 0px auto;
+    margin-top: 20px;
+    border: 1px solid red;
+}
+
+#header{
+    width: 100%;
+    background: royalblue;
+}
+
+#header h1{
+    font-size: 40px;
+    font-family: 'Dekko', cursive;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/*###################################
+            BARRA DE MENU
+###################################*/
+
+.menu ul{
+    list-style: none;
+    background: #ccc;
+    text-transform: uppercase;
+    font-family: 'Dekko', cursive;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    display: block;
+    background: #ccc;
+    padding: 15px;
+}
+
+.menu ul li a:hover{
+    display: block;
+    background: royalblue;
+    color: white;
+    padding: 15px;
+}
+
+
+
+/*###################################
+        CONTENIDO PRINCIPAL
+###################################*/
+
+.contenido{
+    width: 69%;
+    border: 1px solid blue;
+    float: left;
+}
+
+
+.contenido > h1{
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+}
+
+.lateral{
+    width: 30%;
+    border: 1px solid green;
+    float: left;
+    min-height: 500px;
+}
+
+.caja{
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    background: blue;
+    border: 5px solid red;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+
+/*###################################
+                FOOTER
+###################################*/
+
+
+.footer{
+    width: 100%;
+    background: aqua;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Dekko', cursive;
+}
+
